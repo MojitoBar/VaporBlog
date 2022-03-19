@@ -1,3 +1,6 @@
-body {
-    background-color: beige;
+
+
+.container {
+    width: 70%;
+    margin: auto;
 }

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/darkmode.css"/>
+        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+
+        <title>Hello, World</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="darkmode">
+                <div class="inner">
+                    <input type="radio" name="toggle" id="toggle-radio-light" checked><label for="toggle-radio-light" class="tolight"><i class="fas fa-sun tolight"></i></label>
+                    <input type="radio" name="toggle" id="toggle-radio-dark"><label for="toggle-radio-dark" class="todark"><i class="fas fa-moon todark"></i></label>
+                    <div class="darkmode-bg"></div>
+                </div>
+            </div>
+            
+            <div class="index-posts">
+                #for(post in posts):
+                    <div class="index-post">
+                        <div class="index-tags">
+                            #for(tag in post.tags):
+                                <span># #(tag)</span>
+                            #endfor
+                        </div>
+                        <div class="index-title">#(post.title)</div>
+                        <div class="index-context">#(post.context)
+                            첫번째 포스트 입니다. 기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다...</div>
+                        <div class="index-date">#(post.date)</div>
+                    </div>
+                #endfor
+            </div>
+        </div>
+        <script src="/js/darkmode.js"></script>
+    </body>
+</html>

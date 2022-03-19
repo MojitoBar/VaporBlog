@@ -15,9 +15,8 @@ tags: iOS, Swift
 ### 그러면서 ARC가 증가할 때가 바로 <b class="heavy">Strong 참조</b>를 할 때 라고 한번 언급한 적이 있습니다.
 ### 예제 코드와, 그림을 보며 간단히 설명 해보겠습니다.
 
-<pre class="language-swift" data-line="1,3-4">
-<code>
-class Person {
+<pre class="language-swift line-numbers" data-line="1,4,5">
+<code>class Person {
     let name: String
     init(name: String) {
         self.name = name
@@ -28,8 +27,7 @@ class Person {
     }
 }
 
-var kim = Person(name: "kim")
-</code>
+var kim = Person(name: "kim")</code>
 </pre>
 
 ### 위와 같은 코드가 있다고 가정해봅시다.
@@ -51,9 +49,8 @@ var kim = Person(name: "kim")
 ## 순환 참조
 ### 말 그대로 참조가 순환되는 경우를 말하는데요, 아래 코드와 그림을 통해 알아보겠습니다.
 
-<pre class="language-swift" data-line="1,3">
-<code>
-class Person {
+<pre class="language-swift line-numbers" data-line="1,3">
+<code>class Person {
     let name: String
     var friend: Person?
     init(name: String) {
@@ -63,8 +60,7 @@ class Person {
     deinit {
         print("\(name) is being deinitialized")
     }
-}
-</code>
+}</code>
 </pre>
 
 ```swift
