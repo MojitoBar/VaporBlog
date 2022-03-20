@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/prism.css"/>
-        <link rel="stylesheet" href="/css/post.css"/>
         <link rel="stylesheet" href="/css/darkmode.css"/>
+        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/prism.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+
         <title>Hello, World</title>
     </head>
     <body>
-  
-      <div class="wrap">
+        <div class="wrap">
             <div class="darkmode">
                 <div class="inner">
                     <input type="radio" name="toggle" id="toggle-radio-light" checked><label for="toggle-radio-light" class="tolight"><i class="fas fa-sun tolight"></i></label>
@@ -23,7 +24,8 @@
         <div class="container">
             #unsafeHTML(name)
         </div>
-        <script src="/js/prism.js"></script>
+        
         <script src="/js/darkmode.js"></script>
+        <script src="/js/prism.js"></script>
     </body>
 </html>

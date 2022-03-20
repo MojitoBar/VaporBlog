@@ -2,6 +2,7 @@
 date: 2022-03-13 23:12
 description: Strong, Weak, Unowned?
 tags: iOS, Swift
+thumbnail: /images/strongImage.png
 ---
 
 ## Strong, Weak, Unowned?

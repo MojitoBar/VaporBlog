@@ -20,19 +20,41 @@
                 </div>
             </div>
             
+            <div class="index-nav">
+                <div class="index-nav-title">
+                    JuSeok's Blog
+                </div>
+                <div class="index-nav-intro">
+                    "To become an irreplaceable iOS developer"
+                </div>
+                
+                <div class="index-nav-tags">
+                    #for(tag in allTags):
+                        <span>#(tag)</span>
+                    #endfor
+                </div>
+            </div>
+            
             <div class="index-posts">
                 #for(post in posts):
-                    <div class="index-post">
-                        <div class="index-tags">
-                            #for(tag in post.tags):
-                                <span># #(tag)</span>
-                            #endfor
+                    <a class="index-post-a" href="/posts/#(post.file)">
+                        <div class="index-post">
+                            <div class="index-post-left">
+                                <div class="index-tags">
+                                    #for(tag in post.tags):
+                                        <span># #(tag)</span>
+                                    #endfor
+                                </div>
+                                <div class="index-title">#(post.title)</div>
+                                <div class="index-context">#(post.context)
+                                    첫번째 포스트 입니다. 기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 ...</div>
+                                <div class="index-date">#(post.date)</div>
+                            </div>
+                            <div class="index-post-right">
+                                <img src= #(post.thumb) />
+                            </div>
                         </div>
-                        <div class="index-title">#(post.title)</div>
-                        <div class="index-context">#(post.context)
-                            첫번째 포스트 입니다. 기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다...</div>
-                        <div class="index-date">#(post.date)</div>
-                    </div>
+                    </a>
                 #endfor
             </div>
         </div>
