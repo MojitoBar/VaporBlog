@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/earlyaccess/Rubik.css);
 @font-face{
     src: url("/fonts/Rubik-Regular.ttf");
     font-family: "Rubik";
@@ -7,7 +6,12 @@
     src: url("/fonts/Caveat-VariableFont_wght.ttf");
     font-family: "Caveat";
 }
- 
+
+@font-face{
+    src: url("/fonts/Apple SD Gothic Neo Bold.ttf");
+    font-family: "Apple";
+}
+
 .index-posts {
     margin: auto;
     max-width: 900px;
@@ -19,7 +23,7 @@
 [data-darkmode=on]
 .index-post {
     color: white;
-    background-color: #1e1f21;
+    background-color: #1b1c1e;
 }
 
 [data-darkmode=on]
@@ -46,11 +50,23 @@
 .index-title {
     padding: 30px 0px 20px 0px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .index-context {
     line-height: 1.7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    margin-top: 1px;
+    max-height: 80px;
+    overflow: hidden;
+    vertical-align: top;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-weight: lighter;
 }
 
 .index-date {
@@ -63,14 +79,14 @@
 }
 [data-darkmode=on]
 .index-post {
-    box-shadow: 0px 0px 10px #151515;
+    box-shadow: 0px 0px 30px #1b1c1e;
 }
 
 .index-post {
     max-width: 800px;
     padding: 35px 70px 35px 70px;
     border-radius: 16px;
-    box-shadow: 0px 0px 10px #dfdfdf;
+    box-shadow: 1px 4px 30px rgba(225,228,230,0.3);
     margin: auto;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -93,12 +109,19 @@
 }
 
 [data-darkmode=on]
+@media ( max-width: 768px ) {
+    .index-post-right {
+        width: auto;
+        height: 200px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px #171717;
+    }
+}
+
+[data-darkmode=on]
 .index-post-right {
-    width: 250px;
-    height: 200px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 8px;
     box-shadow: 0px 0px 10px #171717;
 }
 
@@ -148,17 +171,16 @@
 }
 
 .index-nav-title {
-    font-family: 'Rubik';
+    font-family: 'Apple';
     font-size: 45px;
-    font-weight: bold;
 }
 
 .index-nav-intro {
     font-family: 'Caveat';
     font-size: 30px;
     color: #5097fd;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     letter-spacing: 1.8px;
 }
 
@@ -198,4 +220,103 @@
     font-size: 13px;
     padding: 2px 6px 2px 2px;
     content: '\f292';
+}
+
+
+@media ( max-width: 768px ) {
+    .index-nav-title {
+        font-size: 35px;
+    }
+    .index-nav-intro {
+        font-size: 25px;
+    }
+    .index-title {
+        font-size: 20px;
+    }
+    .index-context {
+        font-size: 13px;
+    }
+    .index-post {
+        padding: 0px;
+        display: block;
+        overflow: hidden;
+    }
+    .index-post-right {
+        width: auto;
+        border-radius: 0px;
+    }
+    
+    .index-post-right img {
+        height: auto;
+    }
+    
+    .index-post-left {
+        margin: 0px;
+        width: auto;
+        padding: 20px;
+    }
+    .index-post-right {
+        box-shadow: none;
+    }
+}
+
+
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #5097fd;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+#myBtn img {
+    width: 20px;
+    margin-bottom: 7px;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.index-nav-others {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+[data-darkmode= on]
+.index-nav-others {
+    filter: invert(1);
+}
+.index-nav-others a {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.index-nav-others a img{
+    width: 30px;
+}
+
+.github {
+    content: url("/images/github-light.svg")
+}
+
+.instagram {
+    content: url("/images/instagram-light.svg")
+}
+
+.linkedin {
+    content: url("/images/linkedin-light.svg")
 }

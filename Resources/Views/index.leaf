@@ -22,10 +22,16 @@
             
             <div class="index-nav">
                 <div class="index-nav-title">
-                    JuSeok's Blog
+                    JuSeok Tech Blog
                 </div>
                 <div class="index-nav-intro">
                     "To become an irreplaceable iOS developer"
+                </div>
+                
+                <div class="index-nav-others">
+                    <a href="https://github.com/MojitoBar" ><img class="github"/></a>
+                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img class="linkedin"/></a>
+                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img class="instagram"/></a>
                 </div>
                 
                 <div class="index-nav-tags">
@@ -46,8 +52,7 @@
                                     #endfor
                                 </div>
                                 <div class="index-title">#(post.title)</div>
-                                <div class="index-context">#(post.context)
-                                    첫번째 포스트 입니다. 기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 텍스트기다란 ...</div>
+                                <div class="index-context">#(post.context)</div>
                                 <div class="index-date">#(post.date)</div>
                             </div>
                             <div class="index-post-right">
@@ -58,6 +63,12 @@
                 #endfor
             </div>
         </div>
+        
+        <a href="#" id="myBtn" title="Go to top">
+            <img src="/images/triangle.png" />
+        </a>
+        
         <script src="/js/darkmode.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>

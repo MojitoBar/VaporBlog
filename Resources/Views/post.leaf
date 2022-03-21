@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/darkmode.css"/>
-        <link rel="stylesheet" href="/css/index.css"/>
+        <link rel="stylesheet" href="/css/post.css"/>
         <link rel="stylesheet" href="/css/prism.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
 
@@ -20,10 +20,42 @@
                 </div>
             </div>
         </div>
-  
+        
+        
         <div class="container">
-            #unsafeHTML(name)
+            <h1>
+                #(description)
+            </h1>
+            <div class="oneline">#(oneline)</div>
+            <div class="date-tag">
+                Write by Juseok
+                | #(date)
+                | #(tag)
+            </div>
+            #unsafeHTML(html)
         </div>
+        
+                
+        <div class="footer">
+            © Juseok. All rights reserved. Powered by Vapor.
+                <div class="index-nav-others">
+                    <a href="https://github.com/MojitoBar" ><img class="github"/></a>
+                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img class="linkedin"/></a>
+                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img class="instagram"/></a>
+                </div>
+        </div>
+        
+        <div class="logo">
+            <a href="/" >Juseok's Blog</a>
+        </div>
+        
+        <script src="https://utteranc.es/client.js"
+            repo="MojitoBar/VaporBlog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+        </script>
         
         <script src="/js/darkmode.js"></script>
         <script src="/js/prism.js"></script>

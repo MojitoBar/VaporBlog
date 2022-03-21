@@ -1,6 +1,118 @@
-
-
 .container {
-    width: 70%;
+    max-width: 700px;
     margin: auto;
+    font-family: "Apple";
+    margin-top: 180px;
+}
+
+p {
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+s {
+    border-bottom: 1px solid #d6e7ff;
+    box-shadow: inset 0 -12px 0 #d6e7ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+[data-darkmode=on]
+s {
+    border-bottom: 1px solid #5097fd;
+    box-shadow: inset 0 -12px 0 #5097fd;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    padding: 64px 0 6px 0;
+    margin-bottom: 15px;
+    line-height: 3rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.75rem;
+}
+
+.date-tag {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.oneline{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+blockquote {
+    border-left: 1px solid #ddd;
+    padding: 8px 16px;
+    margin: 8px 0;
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.logo a {
+    color: #5097fd;
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 7rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #5097fd;
+}
+
+.footer {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #555;
+}
+
+.index-nav-others {
+    margin-top: 2rem;
+}
+
+.index-nav-others a {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.index-nav-others a img{
+    width: 30px;
+}
+
+.github {
+    content: url("/images/github-light.svg")
+}
+
+.instagram {
+    content: url("/images/instagram-light.svg")
+}
+
+.linkedin {
+    content: url("/images/linkedin-light.svg")
 }
