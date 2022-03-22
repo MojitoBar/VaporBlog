@@ -3,6 +3,7 @@
     margin: auto;
     font-family: "Apple";
     margin-top: 180px;
+    padding: 0rem 3rem 0rem 3rem;
 }
 
 p {
@@ -42,7 +43,7 @@ h2 {
 
 .date-tag {
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .oneline{
@@ -94,6 +95,10 @@ ul li a {
 
 .index-nav-others {
     margin-top: 2rem;
+}
+[data-darkmode=on]
+.index-nav-others {
+    filter: invert(1);
 }
 
 .index-nav-others a {

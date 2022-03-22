@@ -34,7 +34,15 @@
             </div>
             #unsafeHTML(html)
         </div>
+                
         
+        <script src="https://utteranc.es/client.js"
+            repo="MojitoBar/VaporBlog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+        </script>
                 
         <div class="footer">
             © Juseok. All rights reserved. Powered by Vapor.
@@ -49,13 +57,9 @@
             <a href="/" >Juseok's Blog</a>
         </div>
         
-        <script src="https://utteranc.es/client.js"
-            repo="MojitoBar/VaporBlog"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-        </script>
+        <a href="#" id="myBtn" title="Go to top">
+            <img src="/images/triangle.png" />
+        </a>
         
         <script src="/js/darkmode.js"></script>
         <script src="/js/prism.js"></script>

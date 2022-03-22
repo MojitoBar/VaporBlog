@@ -36,7 +36,13 @@
                 
                 <div class="index-nav-tags">
                     #for(tag in allTags):
-                        <span>#(tag)</span>
+                        <a href="/tag/#(tag)">
+                            #if(selectTag == tag):
+                                <span class="select-tag">#(tag)</span>
+                            #else:
+                                <span class="unselect-tag">#(tag)</span>
+                            #endif
+                        </a>
                     #endfor
                 </div>
             </div>

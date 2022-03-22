@@ -11,6 +11,7 @@ struct IndexData: Encodable {
     let root: String
     let posts: [IndexpostInfo]
     let allTags: [Tag]
+    let selectTag: Tag?
 }
 
 struct IndexpostInfo: Encodable {
@@ -31,10 +32,19 @@ struct Post: Encodable {
     let oneline: String
 }
 
+let root = "http://127.0.0.1:8080/"
+
 func routes(_ app: Application) throws {
-    
     app.get { req in
-        return req.view.render("index", IndexData(root: "http://127.0.0.1:8080/", posts: postDatas, allTags: [.Swift, .iOS]))
+        return req.view.render("index", IndexData(root: root, posts: postDatas, allTags: [.Swift, .iOS], selectTag: nil))
+    }
+    
+    app.get("tag", ":tag") { req -> EventLoopFuture<View> in
+        print(req.parameters.get("tag"))
+        let selectTag: Tag = Tag(rawValue: req.parameters.get("tag")!)!
+        let data = dataFilter(postDatas: postDatas, filter: selectTag)
+        
+        return req.view.render("index", IndexData(root: root, posts: data, allTags: [.Swift, .iOS], selectTag: selectTag))
     }
     
     app.get("posts", ":name") { req -> EventLoopFuture<View> in
@@ -54,4 +64,17 @@ func routes(_ app: Application) throws {
         let html = result.html
         return req.view.render("post", Post(date: dateString, description: description, thumbnail: thumbnail, tag: tags, html: html, oneline: oneline))
     }
+}
+
+
+func dataFilter(postDatas: [IndexpostInfo], filter: Tag) -> [IndexpostInfo] {
+    var filterArr: [IndexpostInfo] = []
+    
+    for i in postDatas {
+        if i.tags.contains(filter) {
+            filterArr.append(i)
+        }
+    }
+    
+    return filterArr
 }
