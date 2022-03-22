@@ -121,3 +121,19 @@ ul li a {
 .linkedin {
     content: url("/images/linkedin-light.svg")
 }
+
+[data-darkmode=on]
+.comment-dark-mode {
+    display: block;
+}
+[data-darkmode=on]
+.comment-light-mode {
+    display: none;
+}
+.comment-dark-mode {
+    display: none;
+}
+.comment-light-mode {
+    display: block;
+}
+
