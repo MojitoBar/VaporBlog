@@ -4,6 +4,7 @@ description: Strong, Weak, Unowned, 참조 키워드에 대하여
 oneline: "참조 키워드가 뭔데..?"
 tags: iOS, Swift
 thumbnail: /images/strongImage.png
+contents: Strong, Weak, Unowned?/Strong/순환 참조/Weak/Unowned
 ---
 
 ## Strong, Weak, Unowned?
