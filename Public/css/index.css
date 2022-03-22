@@ -188,12 +188,16 @@
     margin-bottom: 50px;
 }
 
+.index-nav-tags a {
+    text-decoration: none;
+}
+
 [data-darkmode=on]
 .index-nav-tags span {
     background-color: rgb(47, 47, 47);
     color: rgba(255, 255, 255, 0.73);
 }
-.index-nav-tags span {
+.unselect-tag {
     background-color: rgba(0,0,0,0.08);
     box-shadow: 1px 4px 30px rgba(0,0,0,0.05);
     border-radius: 10px;
@@ -206,11 +210,15 @@
     cursor: pointer;
     font-size: 13px;
 }
-.index-nav-tags span:hover {
+.unselect-tag:hover {
     background-color: rgba(0,0,0,0.12);
 }
 
-.index-nav-tags span::before {
+.select-tag:hover {
+    background-color: rgb(34, 99, 193);
+}
+
+.unselect-tag::before {
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -221,6 +229,32 @@
     padding: 2px 6px 2px 2px;
     content: '\f292';
 }
+
+.select-tag {
+    box-shadow: 1px 4px 30px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin: 3px 1px;
+    padding: 10px 15px 10px 15px;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 13px;
+    background: #5097fd;
+    color: white;
+}
+.select-tag::before {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 13px;
+    padding: 2px 6px 2px 2px;
+    content: '\f00c';
+}
+
 
 
 @media ( max-width: 768px ) {
@@ -320,3 +354,4 @@
 .linkedin {
     content: url("/images/linkedin-light.svg")
 }
+
