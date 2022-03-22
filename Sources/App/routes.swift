@@ -30,6 +30,7 @@ struct Post: Encodable {
     let tag: String
     let html: String
     let oneline: String
+    let contents: [String]
 }
 
 let root = "http://127.0.0.1:8080/"
@@ -57,12 +58,10 @@ func routes(_ app: Application) throws {
         let tags = "#" + result.metadata["tags"]!.components(separatedBy: ", ").joined(separator: " #")
         let thumbnail = result.metadata["thumbnail"]!
         let oneline = result.metadata["oneline"]!
+        let contents = result.metadata["contents"]!.split(separator: "/").map{ $0.description }
         
-        print(tags)
-        print(thumbnail)
-        
-        let html = result.html
-        return req.view.render("post", Post(date: dateString, description: description, thumbnail: thumbnail, tag: tags, html: html, oneline: oneline))
+        let html = insertString(html: result.html, contents: contents)
+        return req.view.render("post", Post(date: dateString, description: description, thumbnail: thumbnail, tag: tags, html: html, oneline: oneline, contents: contents))
     }
 }
 
@@ -77,4 +76,58 @@ func dataFilter(postDatas: [IndexpostInfo], filter: Tag) -> [IndexpostInfo] {
     }
     
     return filterArr
+}
+
+func insertString(html: String, contents: [String]) -> String {
+    var HTML = html
+    var counts = HTML.matching(pattern: "<h2>")
+    var index = 0
+    print(contents)
+    for i in 0..<contents.count {
+        HTML.insert(contentsOf: "<section id= \"\(contents[i])\" >", at: HTML.index(HTML.startIndex, offsetBy: counts[i] - 1))
+        counts = counts.map{ $0 + contents[i].count }
+        index += 1
+    }
+    counts = HTML.matching(pattern: "</h2>")
+    for i in 0..<contents.count {
+        HTML.insert(contentsOf: "</section>", at: HTML.index(HTML.startIndex, offsetBy: counts[i] + 4))
+        counts = counts.map{ $0 + 10 }
+    }
+    print(HTML)
+    return HTML
+}
+
+extension String{
+    func matching(pattern: String) -> [Int]{
+        let str = Array(self)
+        let pat = Array(pattern)
+        var loc = [Int]()
+        var pi = Array(repeatElement(0, count: pat.count))
+        var i = 1,j = 0
+        while i < pat.count{
+            while j != 0 && pat[j] != pat[i] {
+                j = pi[j-1]
+            }
+            if pat[j] == pat[i]{
+                j += 1
+                pi[i] = j
+            }
+            i += 1
+        }
+        i = 0;j = 0
+        while  i < str.count {
+            while j != 0 && pat[j] != str[i]{
+                j = pi[j-1]
+            }
+            if pat[j] == str[i]{
+                j += 1
+                if j == pat.count{
+                    loc.append(i - j + 2)
+                    j = pi[j-1]
+                }
+            }
+            i += 1
+        }
+        return loc
+    }
 }

@@ -22,38 +22,47 @@
         </div>
         
         
-        <div class="container">
-            <h1>
-                #(description)
-            </h1>
-            <div class="oneline">#(oneline)</div>
-            <div class="date-tag">
-                Write by Juseok
-                | #(date)
-                | #(tag)
+        <div class="wrapper">
+            <div class="container">
+                <h1>
+                    #(description)
+                </h1>
+                <div class="oneline">#(oneline)</div>
+                <div class="date-tag">
+                    Write by Juseok
+                    | #(date)
+                    | #(tag)
+                </div>
+                #unsafeHTML(html)
             </div>
-            #unsafeHTML(html)
+            <div class="side-contents">
+                <div class="side-title">CONTENTS</div>
+                #for(item in contents):
+                        <a href="##(item)"><div class="side-item">#(item)</div><a/>
+                #endfor
+            </div>
         </div>
                 
-        
-        <div class="comment-light-mode">
-            <script src="https://utteranc.es/client.js"
-                repo="MojitoBar/VaporBlog"
-                issue-term="pathname"
-                theme="github-light"
-                crossorigin="anonymous"
-                async>
-            </script>
-        </div>
-        
-        <div class="comment-dark-mode">
-            <script src="https://utteranc.es/client.js"
-                repo="MojitoBar/VaporBlog"
-                issue-term="pathname"
-                theme="github-dark"
-                crossorigin="anonymous"
-                async>
-            </script>
+        <div style="position: relative;height: 450px;">
+            <div class="comment-light-mode">
+                <script src="https://utteranc.es/client.js"
+                    repo="MojitoBar/VaporBlog"
+                    issue-term="pathname"
+                    theme="github-light"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
+            
+            <div class="comment-dark-mode">
+                <script src="https://utteranc.es/client.js"
+                    repo="MojitoBar/VaporBlog"
+                    issue-term="pathname"
+                    theme="github-dark"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
         </div>
         
         <div class="footer">
