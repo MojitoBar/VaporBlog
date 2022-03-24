@@ -7,8 +7,17 @@
         <link rel="stylesheet" href="/css/darkmode.css"/>
         <link rel="stylesheet" href="/css/index.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
-
-        <title>Hello, World</title>
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        
+        
+        <meta property="og:image" content="/images/metaimage.jpg">
+        
+        <meta property="og:description"This blog is to study and record general knowledge about ios application development.">
+        
+        <meta property="og:title" content="Juseok's Tech Blog">
+        
+        <title>Juseok's Tech Blog</title>
     </head>
     <body>
         <div class="wrap">
@@ -21,9 +30,11 @@
             </div>
             
             <div class="index-nav">
-                <div class="index-nav-title">
-                    JuSeok Tech Blog
-                </div>
+                <a href="/">
+                    <div class="index-nav-title">
+                        JuSeok Tech Blog
+                    </div>
+                </a>
                 <div class="index-nav-intro">
                     "To become an irreplaceable iOS developer"
                 </div>
@@ -77,4 +88,48 @@
         <script src="/js/darkmode.js"></script>
         <script src="/js/index.js"></script>
     </body>
+    
+    <script type="module">
+
+      // Import the functions you need from the SDKs you need
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+      // Your web app's Firebase configuration
+
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+      const firebaseConfig = {
+
+        apiKey: "AIzaSyA1cvRwNVP8IAn0hpTVlvd7h-1FqdHwbyc",
+
+        authDomain: "vaporblog-f6451.firebaseapp.com",
+
+        projectId: "vaporblog-f6451",
+
+        storageBucket: "vaporblog-f6451.appspot.com",
+
+        messagingSenderId: "504247565595",
+
+        appId: "1:504247565595:web:51563d4d46f2bc2b9f67be",
+
+        measurementId: "G-9CJ9LW0VMJ"
+
+      };
+
+
+      // Initialize Firebase
+
+      const app = initializeApp(firebaseConfig);
+
+      const analytics = getAnalytics(app);
+
+    </script>
 </html>

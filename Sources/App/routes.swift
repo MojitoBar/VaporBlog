@@ -3,9 +3,12 @@ import LeafMarkdown
 import Ink
 
 enum Tag: String, Encodable {
+    case ALL = "ALL"
     case Swift = "Swift"
     case iOS = "iOS"
 }
+
+let allTags: [Tag] = [.ALL, .Swift, .iOS]
 
 struct IndexData: Encodable {
     let root: String
@@ -35,17 +38,18 @@ struct Post: Encodable {
 
 let root = "http://127.0.0.1:8080/"
 
+
 func routes(_ app: Application) throws {
+    
     app.get { req in
-        return req.view.render("index", IndexData(root: root, posts: postDatas, allTags: [.Swift, .iOS], selectTag: nil))
+        return req.view.render("index", IndexData(root: root, posts: postDatas, allTags: allTags, selectTag: nil))
     }
     
     app.get("tag", ":tag") { req -> EventLoopFuture<View> in
-        print(req.parameters.get("tag"))
         let selectTag: Tag = Tag(rawValue: req.parameters.get("tag")!)!
         let data = dataFilter(postDatas: postDatas, filter: selectTag)
         
-        return req.view.render("index", IndexData(root: root, posts: data, allTags: [.Swift, .iOS], selectTag: selectTag))
+        return req.view.render("index", IndexData(root: root, posts: data, allTags: allTags, selectTag: selectTag))
     }
     
     app.get("posts", ":name") { req -> EventLoopFuture<View> in
@@ -70,7 +74,7 @@ func dataFilter(postDatas: [IndexpostInfo], filter: Tag) -> [IndexpostInfo] {
     var filterArr: [IndexpostInfo] = []
     
     for i in postDatas {
-        if i.tags.contains(filter) {
+        if i.tags.contains(filter) || filter == .ALL{
             filterArr.append(i)
         }
     }
@@ -84,8 +88,8 @@ func insertString(html: String, contents: [String]) -> String {
     var index = 0
     print(contents)
     for i in 0..<contents.count {
-        HTML.insert(contentsOf: "<section id= \"\(contents[i])\" >", at: HTML.index(HTML.startIndex, offsetBy: counts[i] - 1))
-        counts = counts.map{ $0 + contents[i].count }
+        HTML.insert(contentsOf: "<section id=\"\(contents[i])\">", at: HTML.index(HTML.startIndex, offsetBy: counts[i] - 1))
+        counts = counts.map{ $0 + contents[i].count + 15}
         index += 1
     }
     counts = HTML.matching(pattern: "</h2>")

@@ -170,6 +170,11 @@
     text-align: center;
 }
 
+.index-nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .index-nav-title {
     font-family: 'Apple';
     font-size: 45px;
