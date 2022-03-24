@@ -11,7 +11,6 @@ enum Tag: String, Encodable {
 let allTags: [Tag] = [.ALL, .Swift, .iOS]
 
 struct IndexData: Encodable {
-    let root: String
     let posts: [IndexpostInfo]
     let allTags: [Tag]
     let selectTag: Tag?
@@ -36,20 +35,18 @@ struct Post: Encodable {
     let contents: [String]
 }
 
-let root = "http://127.0.0.1:8080/"
-
 
 func routes(_ app: Application) throws {
     
     app.get { req in
-        return req.view.render("index", IndexData(root: root, posts: postDatas, allTags: allTags, selectTag: nil))
+        return req.view.render("index", IndexData(posts: postDatas, allTags: allTags, selectTag: nil))
     }
     
     app.get("tag", ":tag") { req -> EventLoopFuture<View> in
         let selectTag: Tag = Tag(rawValue: req.parameters.get("tag")!)!
         let data = dataFilter(postDatas: postDatas, filter: selectTag)
         
-        return req.view.render("index", IndexData(root: root, posts: data, allTags: allTags, selectTag: selectTag))
+        return req.view.render("index", IndexData(posts: data, allTags: allTags, selectTag: selectTag))
     }
     
     app.get("posts", ":name") { req -> EventLoopFuture<View> in
