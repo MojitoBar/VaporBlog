@@ -87,6 +87,10 @@ img {
     text-decoration: none;
 }
 
+ul li {
+    margin-bottom: 1rem;
+}
+
 ul li a {
     text-decoration: none;
     color: #5097fd;
@@ -111,6 +115,12 @@ ul li a {
 .index-nav-others a {
     margin-right: 5px;
     margin-left: 5px;
+}
+
+a {
+    color: #5097fd;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .index-nav-others a img{
