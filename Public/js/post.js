@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function(){
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
       
     for (i in sections) {
+//        console.log(sections["왜 Vapor인가?"])
+//        console.log(scrollPosition)
       if (sections[i] <= scrollPosition) {
           var item = document.querySelector('.active div')
           item.parentElement.setAttribute('class', ' ');
