@@ -27,8 +27,6 @@ contents: Strong, Weak, Unowned?/Strong/순환 참조/Weak/Unowned
     deinit {
         print("\(name) is being deinitialized")
     }
-            
-    let tags = "#" + result.metadata["tags"]!.components(separatedBy: ", ").joined(separator: " #")
 }
 
 var kim = Person(name: "kim")</code>

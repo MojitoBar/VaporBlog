@@ -6,9 +6,10 @@ enum Tag: String, Encodable {
     case ALL = "ALL"
     case Swift = "Swift"
     case iOS = "iOS"
+    case Vapor = "Vapor"
 }
 
-let allTags: [Tag] = [.ALL, .Swift, .iOS]
+let allTags: [Tag] = [.ALL, .Swift, .iOS, .Vapor]
 
 struct IndexData: Encodable {
     let posts: [IndexpostInfo]

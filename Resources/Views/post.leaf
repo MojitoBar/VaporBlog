@@ -43,7 +43,7 @@
             <div class="side-contents">
                 <div class="side-title">CONTENTS</div>
                 #for(item in contents):
-                        <a href="##(item)"><div class="side-item">#(item)</div><a/>
+                    <a href="##(item)"><div class="side-item">#(item)</div><a/>
                 #endfor
             </div>
         </div>
@@ -89,5 +89,6 @@
         
         <script src="/js/darkmode.js"></script>
         <script src="/js/prism.js"></script>
+        <script src="/js/post.js"></script>
     </body>
 </html>
