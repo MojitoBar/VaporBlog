@@ -102,7 +102,7 @@
           document.querySelector('.side-item').parentElement.setAttribute('class', 'active');
             
           window.onscroll = function() {
-            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
               
             for (i in sections) {
                 // console.log(sections["왜 Vapor인가?"])
