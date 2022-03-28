@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
   'use strict';
 
+
+    
+  window.onscroll = function() {
   var section = document.querySelectorAll("section");
   var sections = {};
   var i = 0;
@@ -10,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   document.querySelector('.side-item').parentElement.setAttribute('class', 'active');
-    
-  window.onscroll = function() {
+      
+      
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
       
     for (i in sections) {
-        console.log(sections["왜 Vapor인가?"])
-        console.log(scrollPosition)
       if (sections[i] <= scrollPosition) {
           var item = document.querySelector('.active div')
           item.parentElement.setAttribute('class', ' ');

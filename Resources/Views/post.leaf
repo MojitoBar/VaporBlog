@@ -89,31 +89,5 @@
         
         <script src="/js/darkmode.js"></script>
         <script src="/js/prism.js"></script>
-    
-        <script>
-        var section = document.querySelectorAll("section");
-          var sections = {};
-          var i = 0;
-
-          Array.prototype.forEach.call(section, function(e) {
-            sections[e.id] = e.offsetTop;
-          });
-
-          document.querySelector('.side-item').parentElement.setAttribute('class', 'active');
-            
-          window.onscroll = function() {
-            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-              
-            for (i in sections) {
-                // console.log(sections["왜 Vapor인가?"])
-                // console.log(scrollPosition)
-              if (sections[i] <= scrollPosition) {
-                  var item = document.querySelector('.active div')
-                  item.parentElement.setAttribute('class', ' ');
-                  document.querySelector('[href="#' + i + '"]').setAttribute('class', 'active');
-              }
-            }
-          };
-        </script>
     </body>
 </html>
