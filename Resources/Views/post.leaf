@@ -89,5 +89,6 @@
         
         <script src="/js/darkmode.js"></script>
         <script src="/js/prism.js"></script>
+        <script src="/js/post.js"></script>
     </body>
 </html>
