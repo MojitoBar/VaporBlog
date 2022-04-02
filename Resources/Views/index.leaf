@@ -22,6 +22,10 @@
     <body>
         <div class="wrap">
             <div class="darkmode">
+                <a class="before-blog" href="https://juseok.netlify.app/">
+                    이전 블로그
+                </a>
+        
                 <div class="inner">
                     <input type="radio" name="toggle" id="toggle-radio-light" checked><label for="toggle-radio-light" class="tolight"><i class="fas fa-sun tolight"></i></label>
                     <input type="radio" name="toggle" id="toggle-radio-dark"><label for="toggle-radio-dark" class="todark"><i class="fas fa-moon todark"></i></label>
@@ -79,6 +83,15 @@
                     </a>
                 #endfor
             </div>
+        </div>
+        
+        <div class="footer">
+            © Juseok. All rights reserved. Powered by Vapor.
+                <div class="index-nav-others">
+                    <a href="https://github.com/MojitoBar" ><img class="github"/></a>
+                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img class="linkedin"/></a>
+                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img class="instagram"/></a>
+                </div>
         </div>
         
         <a href="#" id="myBtn" title="Go to top">
