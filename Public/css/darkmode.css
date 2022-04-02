@@ -27,7 +27,7 @@ body[data-darkmode=on] .darkmode > .inner{
 .darkmode {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 20px; 
 }
 
 .darkmode > .inner{
