@@ -1,6 +1,6 @@
 ---
 date: 2022년 03월 13일 23:12
-description: Strong, Weak, Unowned, 참조 키워드에 대하여
+description: Strong, Weak, Unowned 참조 키워드
 oneline: "참조 키워드가 뭔데..?"
 tags: iOS, Swift
 thumbnail: /images/strongImage.png
