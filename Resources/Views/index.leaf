@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="ko">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/darkmode.css"/>
@@ -44,9 +44,9 @@
                 </div>
                 
                 <div class="index-nav-others">
-                    <a href="https://github.com/MojitoBar" ><img class="github"/></a>
-                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img class="linkedin"/></a>
-                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img class="instagram"/></a>
+                    <a href="https://github.com/MojitoBar" ><img alt="github" class="github"/></a>
+                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img alt="linkedin" class="linkedin"/></a>
+                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img alt="instagram" class="instagram"/></a>
                 </div>
                 
                 <div class="index-nav-tags">
@@ -77,7 +77,7 @@
                                 <div class="index-date">#(post.date)</div>
                             </div>
                             <div class="index-post-right">
-                                <img src= #(post.thumb) />
+                                <img alt="thumb" "src= #(post.thumb) />
                             </div>
                         </div>
                     </a>
@@ -88,14 +88,14 @@
         <div class="footer">
             © Juseok. All rights reserved. Powered by Vapor.
                 <div class="index-nav-others">
-                    <a href="https://github.com/MojitoBar" ><img class="github"/></a>
-                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img class="linkedin"/></a>
-                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img class="instagram"/></a>
+                    <a href="https://github.com/MojitoBar" ><img alt="github" class="github"/></a>
+                    <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img alt="linkedin" class="linkedin"/></a>
+                    <a href="https://www.instagram.com/ds3962/?hl=ko" ><img alt="instagram" class="instagram"/></a>
                 </div>
         </div>
         
         <a href="#" id="myBtn" title="Go to top">
-            <img src="/images/triangle.png" />
+            <img alt="triangle" src="/images/triangle.png" />
         </a>
         
         <script src="/js/darkmode.js"></script>
