@@ -1,7 +1,7 @@
 ---
 date: 2022년 03월 25일 23:52
 description: Vapor로 블로그를 만들어본 후기
-oneline: "흔한 iOS 개발자가 사서 고생하는 법"
+oneline: 흔한 iOS 개발자가 사서 고생하는 법
 tags: Swift, Vapor
 thumbnail: /images/vapor-1.png
 contents: Vapor란?/왜 Vapor인가?/내가 겪은 시행착오/마무리

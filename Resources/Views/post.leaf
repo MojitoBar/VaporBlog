@@ -13,7 +13,7 @@
 
         <meta property="og:image" content="#(thumbnail)">
         <meta property="og:title" content="#(description)">
-        <meta property="og:description" content=#(oneline)>
+        <meta property="og:description" content="#(oneline)">
         <title>Juseok's Tech Blog</title>
     </head>
     <body>
@@ -37,7 +37,7 @@
                 <h1>
                     #(description)
                 </h1>
-                <div class="oneline">#(oneline)</div>
+                <div class="oneline">"#(oneline)"</div>
                 <div class="date-tag">
                     Write by Juseok
                     | #(date)
