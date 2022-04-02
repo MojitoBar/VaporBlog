@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-        
+        <link rel="canonical" href="https://juseokvapor.herokuapp.com/">
         
         <meta property="og:image" content="/images/metaimage.jpg">
         
@@ -64,7 +64,7 @@
             
             <div class="index-posts">
                 #for(post in posts):
-                    <a class="index-post-a" href="/posts/#(post.file)">
+                    <a class="index-post-a" href="/posts/#(post.title)">
                         <div class="index-post">
                             <div class="index-post-left">
                                 <div class="index-tags">

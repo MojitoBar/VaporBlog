@@ -16,7 +16,7 @@ contents: Protocol/기본적인 사용법/Protocol VS Class/Protocol의 장점�
 
 [Swift Docs](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)에서는 **procotol**을 아래와 같이 정의합니다.
 
-<img src="/images/protocol.png"/>
+<img alt="protocol" src="/images/protocol.png"/>
 
 > 프로토콜은 특정 작업이나 기능에 적합한 메서드, 속성 및 기타 요구 사항의 청사진을 정의합니다. 그런 다음 프로토콜은 해당 요구 사항의 실제 구현을 제공하기 위해 클래스, 구조 또는 열거에 의해 채택될 수 있습니다. 프로토콜의 요구 사항을 충족하는 모든 유형은 해당 프로토콜을 준수한다고 합니다.
 
