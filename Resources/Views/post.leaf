@@ -14,9 +14,6 @@
         <meta property="og:image" content="#(thumbnail)">
         <meta property="og:title" content="#(description)">
         <meta property="og:description" content=#(oneline)>
-        
-        lang
-        
         <title>Juseok's Tech Blog</title>
     </head>
     <body>
