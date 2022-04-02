@@ -18,6 +18,10 @@
     <body>
         <div class="wrap">
             <div class="darkmode">
+                <a class="before-blog" href="https://juseok.netlify.app/">
+                    이전 블로그
+                </a>
+                
                 <div class="inner">
                     <input type="radio" name="toggle" id="toggle-radio-light" checked><label for="toggle-radio-light" class="tolight"><i class="fas fa-sun tolight"></i></label>
                     <input type="radio" name="toggle" id="toggle-radio-dark"><label for="toggle-radio-dark" class="todark"><i class="fas fa-moon todark"></i></label>

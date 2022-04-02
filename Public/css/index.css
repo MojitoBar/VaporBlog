@@ -98,7 +98,7 @@
 .index-post-right img {
     width: 200px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .index-post-right {
@@ -175,6 +175,11 @@
 .index-nav a {
     text-decoration: none;
     color: black;
+}
+
+[data-darkmode=on]
+.index-nav-title {
+    color: white;
 }
 
 .index-nav-title {
@@ -364,4 +369,21 @@
 
 .linkedin {
     content: url("/images/linkedin-light.svg")
+}
+
+.footer {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    color: #555;
+}
+
+.before-blog {
+    line-height: 3rem;
+    margin-right: 1rem;
+    line-height: 2.8rem;
+    color: #5097fd;
+    text-decoration: none;
+    font-weight: bold;
 }
