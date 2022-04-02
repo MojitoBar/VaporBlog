@@ -1,50 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <!-- www.check-domains.com sitemap generator -->
 
 <url>
    <loc>https://juseokvapor.herokuapp.com/</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>1.0000</priority>
 </url>
 <url>
    <loc>https://juseokvapor.herokuapp.com/tag/ALL</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://juseokvapor.herokuapp.com/tag/Swift</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://juseokvapor.herokuapp.com/tag/iOS</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://juseokvapor.herokuapp.com/tag/Vapor</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://juseokvapor.herokuapp.com/posts/protocol</loc>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://juseokvapor.herokuapp.com/posts/VaporPost1</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://juseokvapor.herokuapp.com/posts/SecondPost</loc>
-   <lastmod>2022-03-27T09:28:34+00:00</lastmod>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>

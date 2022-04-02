@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://juseokvapor.herokuapp.com/sitemap.xml

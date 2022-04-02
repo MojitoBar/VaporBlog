@@ -36,7 +36,7 @@ var kim = Person(name: "kim")</code>
 그러면 아래 그림과 같이 ~~메모리의 할당~~이 일어나게 될 것입니다.
 
 
-<img src="/images/strongImage.png"/>
+<img alt="strong" src="/images/strongImage.png"/>
 
 
 이처럼 힙 영역에 할당된 메모리를 참조하여 RC가 증가하게하는 참조 방법이 Strong, 강한 참조입니다.
@@ -72,7 +72,7 @@ lee?.friend = kim</code>
 이 경우엔 아래와 같은 그림처럼 메모리가 할당될 것입니다.
 
 
-<img src="/images/strong2Image.png"/>
+<img alt="strong2" src="/images/strong2Image.png"/>
 
 
 kim과 lee의 friend 프로퍼티가 각각 lee와 kim을 참조하게 되며 RC가 하나씩 더 카운트 된 것을 볼 수 있습니다.
@@ -127,7 +127,7 @@ lee = nil</code>
 아까와 동일한 코드에서 friend 프로퍼티에 weak을 적용했습니다.
 그럼 아래 그림과 같이 각각의 friend의 참조는 RC에 영향을 주지 않기 떄문에 각각 1씩만 증가한 것을 볼 수 있습니다.
 
-<img src="/images/weakImage.png"/>
+<img alt="weak" src="/images/weakImage.png"/>
 
 여기서 kim과 lee가 nil이 된다면 RC가 1씩 감소하게 되고, 둘 다 RC가 0이 되기 때문에 정상적으로 힙 메모리에서 해제되는 것을 볼 수 있습니다.
 
