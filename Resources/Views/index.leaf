@@ -76,7 +76,7 @@
                                 <div class="index-date">#(post.date)</div>
                             </div>
                             <div class="index-post-right">
-                                <img alt="thumb" "src= #(post.thumb) />
+                                <img alt="thumb" src= #(post.thumb) />
                             </div>
                         </div>
                     </a>
