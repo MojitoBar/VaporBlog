@@ -5,6 +5,7 @@ oneline: 흔한 iOS 개발자가 사서 고생하는 법
 tags: Swift, Vapor
 thumbnail: /images/vapor-1.png
 contents: Vapor란?/왜 Vapor인가?/내가 겪은 시행착오/마무리
+file: Vapor
 ---
 
 ## Vapor란?

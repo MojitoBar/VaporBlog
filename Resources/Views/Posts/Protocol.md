@@ -1,10 +1,11 @@
 ---
 date: 2022년 04월 02일 19:15
-description: Protocol 이란
+description: Protocol 이란?
 oneline: 아키텍처를 공부하다 만난 protocol 코드를 이해하기 위한 과정
 tags: iOS, Swift
 thumbnail: /images/swiftlogo.png
 contents: Protocol/기본적인 사용법/Protocol VS Class/Protocol의 장점을 살린 예제/Protocol Type?/정리
+file: Protocol
 ---
 
 ## Protocol

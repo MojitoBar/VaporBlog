@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-        <link rel="canonical" href="https://juseokvapor.herokuapp.com/posts/#(title)">
+        <link rel="canonical" href="https://juseokvapor.herokuapp.com/posts/#(file)">
 
         <meta property="og:image" content="#(thumbnail)">
         <meta property="og:title" content="#(description)">

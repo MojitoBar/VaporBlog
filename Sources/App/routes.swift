@@ -34,6 +34,7 @@ struct Post: Encodable {
     let html: String
     let oneline: String
     let contents: [String]
+    let file: String
 }
 
 
@@ -61,9 +62,10 @@ func routes(_ app: Application) throws {
         let thumbnail = result.metadata["thumbnail"]!
         let oneline = result.metadata["oneline"]!
         let contents = result.metadata["contents"]!.split(separator: "/").map{ $0.description }
+        let file = result.metadata["file"]!
         
         let html = insertString(html: result.html, contents: contents)
-        return req.view.render("post", Post(date: dateString, description: description, thumbnail: thumbnail, tag: tags, html: html, oneline: oneline, contents: contents))
+        return req.view.render("post", Post(date: dateString, description: description, thumbnail: thumbnail, tag: tags, html: html, oneline: oneline, contents: contents, file: file))
     }
 }
 
