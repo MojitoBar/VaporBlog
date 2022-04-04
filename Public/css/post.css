@@ -265,3 +265,9 @@ a {
     margin-right: 1rem;
     line-height: 2.8rem;
 }
+
+
+.footer a {
+    color: #555;
+    font-weight: normal;
+}
