@@ -357,6 +357,7 @@
 
 .index-nav-others a img{
     width: 30px;
+    display: inline-block;
 }
 
 .github {
