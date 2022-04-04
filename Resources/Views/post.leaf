@@ -55,7 +55,7 @@
             </div>
         </div>
                 
-        <div style="position: relative;height: 450px;">
+        <div style="position: relative;height: 350px;">
             <div class="comment-light-mode">
                 <script src="https://utteranc.es/client.js"
                     repo="MojitoBar/VaporBlog"
@@ -70,7 +70,7 @@
                 <script src="https://utteranc.es/client.js"
                         repo="MojitoBar/VaporBlog"
                         issue-term="pathname"
-                        theme="github-light"
+                        theme="github-dark"
                         crossorigin="anonymous"
                         async>
                 </script>
