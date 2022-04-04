@@ -119,6 +119,7 @@
     }
 }
 
+/*// css 적용*/
 [data-darkmode=on]
 .index-post-right {
     box-shadow: 0px 0px 10px #171717;
