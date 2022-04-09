@@ -5,6 +5,13 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
+    IndexpostInfo(title: "Protocol Delegate 패턴",
+    context: "저번 포스팅에서 Protocol에 대한 개인적인 의문점을 해소하며 전반적인 사용법에 대해 알아 봤습니다. 이번 포스팅에서는 지난번에 다루지 못했던 Delegate 패턴에 대해 알아보도록 하겠습니다. Protocol에 대한 배경지식이 부족하다면 이전 포스팅을 참조하는 것이 도움이 될 수 있습니다.",
+    date: "2022-04-09",
+    file: "ProtocolDeep",
+    tags: [.Swift, .iOS],
+    thumb: "/images/swiftlogo.png"),
+    
     IndexpostInfo(title: "Protocol 이란?",
     context: "이번 포스팅에서는 Swift의 Protocol에 대해서 정리해보려 합니다. 먼저 여기서 다루는 내용은 VIPER 아키텍처를 공부하다 생긴 protocol에 대한 궁금증을 해결하는데 집중되어 있음을 알립니다. 따라서 이론적인 부분이나 개념은 깊게 다루지 않을 수도 있습니다. Swift Docs에서는 procotol을 아래와 같이 정의합니다.",
     date: "2022-04-02",
