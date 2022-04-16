@@ -6,7 +6,7 @@
 //
 let postDatas: [IndexpostInfo] = [
     IndexpostInfo(title: "VIPER 패턴이란 무엇인가?",
-    context: "저번 포스팅에서 Protocol에 대한 개인적인 의문점을 해소하며 전반적인 사용법에 대해 알아 봤습니다. 이번 포스팅에서는 지난번에 다루지 못했던 Delegate 패턴에 대해 알아보도록 하겠습니다. Protocol에 대한 배경지식이 부족하다면 이전 포스팅을 참조하는 것이 도움이 될 수 있습니다.",
+    context: "VIPER는 View, Interactor, Presenter, Entity, Router로 이루어진 아키텍처입니다.어느정도 어플리케이션을 개발하다보면 MVC, MVVM와 같은 아키텍처 패턴에 대해 접하게 되는데요, 이러한 아키텍처들이 왜 필요한 것일까요?좋은 아키텍처 패턴을 가진 소프트웨어는 기능을 추가하거나 수정하기 쉽고, 결국 이것은 비용적인 측면에서도 중요하다.많은 사람들이 말하는 아키텍처의 중요성입니다.",
     date: "2022-04-16",
     file: "VIPER",
     tags: [.Swift, .iOS],
