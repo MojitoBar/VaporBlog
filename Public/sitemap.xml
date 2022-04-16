@@ -37,13 +37,32 @@
    <priority>0.8000</priority>
 </url>
 <url>
+   <loc>https://juseok.xyz/posts/Strong</loc>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+
+<url>
+   <loc>https://juseok.xyz/posts/Vapor</loc>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
    <loc>https://juseok.xyz/posts/Protocol</loc>
    <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
-   <loc>https://juseok.xyz/posts/Strong</loc>
+   <loc>https://juseok.xyz/posts/ProtocolDeep</loc>
+   <lastmod>2022-04-02T16:10:09+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://juseok.xyz/posts/VIPER</loc>
    <lastmod>2022-04-02T16:10:09+00:00</lastmod>
    <changefreq>monthly</changefreq>
    <priority>0.8000</priority>
