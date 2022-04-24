@@ -5,6 +5,13 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
+    IndexpostInfo(title: "iOS 어플 Gifty 배포 회고",
+    context: "이번 포스팅에서는 처음으로 배포하게 된 Gifty 어플에 대한 회고를 작성해보려 합니다. 회고를 작성하기 전에 이번에 배포하게 된 Gifty에 대해서 간단히 소개를 하려 합니다! Gifty는 Apple의 Vision 프레임워크를 주력으로 사용하여 갤러리에 있는 기프티콘 이미지만 뽑아 보여주는 어플입니다. 현재는 앱스토어에서 다운 받을 수 있습니다 ㅎㅎ",
+    date: "2022-04-24",
+    file: "Gifty",
+    tags: [.Swift, .iOS],
+    thumb: "/images/gifty.png"),
+    
     IndexpostInfo(title: "VIPER 패턴이란 무엇인가?",
     context: "VIPER는 View, Interactor, Presenter, Entity, Router로 이루어진 아키텍처입니다.어느정도 어플리케이션을 개발하다보면 MVC, MVVM와 같은 아키텍처 패턴에 대해 접하게 되는데요, 이러한 아키텍처들이 왜 필요한 것일까요?좋은 아키텍처 패턴을 가진 소프트웨어는 기능을 추가하거나 수정하기 쉽고, 결국 이것은 비용적인 측면에서도 중요하다.많은 사람들이 말하는 아키텍처의 중요성입니다.",
     date: "2022-04-16",
