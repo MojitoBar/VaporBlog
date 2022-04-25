@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/darkmode.css"/>
+        
         <link rel="stylesheet" href="/css/post.css"/>
         <link rel="stylesheet" href="/css/prism.css"/>
+        <link rel="stylesheet" href="/css/darkmode.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="canonical" href="https://juseokvapor.herokuapp.com/posts/#(file)">
-
+        
         <meta property="og:image" content="#(thumbnail)">
         <meta property="og:title" content="#(description)">
         <meta property="og:description" content="#(oneline)">
@@ -18,7 +19,7 @@
         
         <title>Juseok's Tech Blog</title>
     </head>
-    <body>
+    <body data-darkmode="off">
         <div class="wrap">
             <div class="darkmode">
                 <a class="before-blog" href="https://juseok.netlify.app/">
@@ -54,33 +55,21 @@
                 #endfor
             </div>
         </div>
-                
-        <div style="position: relative;height: 350px;">
-            <div class="comment-light-mode">
-                <script src="https://utteranc.es/client.js"
-                    repo="MojitoBar/VaporBlog"
-                    issue-term="pathname"
-                    theme="github-light"
-                    crossorigin="anonymous"
-                    async>
-                </script>
-            </div>
             
-            <div class="comment-dark-mode">
-                <script src="https://utteranc.es/client.js"
-                        repo="MojitoBar/VaporBlog"
-                        issue-term="pathname"
-                        theme="github-dark"
-                        crossorigin="anonymous"
-                        async>
-                </script>
-            </div>
+        <div class="comment-zz-mode">
+            <script src="https://utteranc.es/client.js"
+                repo="MojitoBar/VaporBlog"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+            </script>
         </div>
         
         <div class="footer">
             © Juseok. All rights reserved. Powered by Vapor.
                 <div class="index-nav-others">
-                    <a href="https://github.com/MojitoBar" ><img alt="github" class="github"/></a>
+                    <a href="https://github.com/MojitoBar"><img alt="github" class="github"/></a>
                     <a href="https://www.linkedin.com/in/%EB%8F%99%EC%84%9D-%EC%A3%BC-a70903204/" ><img alt="linkedin" class="linkedin"/></a>
                     <a href="https://www.instagram.com/ds3962/?hl=ko" ><img alt="instagram" class="instagram"/></a>
                 </div>
@@ -93,9 +82,9 @@
         <a href="#" id="myBtn" title="Go to top">
             <img alt="triangle" src="/images/triangle.png" />
         </a>
-        
-        <script src="/js/darkmode.js"></script>
         <script src="/js/prism.js"></script>
         <script src="/js/post.js"></script>
+        <script src="/js/darkmode.js"></script>
+                
     </body>
 </html>

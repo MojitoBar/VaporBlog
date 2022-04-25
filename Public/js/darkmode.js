@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         },false);
     }else{
-        localStorage.removeItem("darkmode");
+        document.body.dataset.darkmode='off';
+        localStorage.setItem("darkmode", "off");
     }
 })
