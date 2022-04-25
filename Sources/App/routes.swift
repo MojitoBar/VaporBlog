@@ -1,7 +1,6 @@
 import Vapor
 import LeafMarkdown
 import Ink
-import WebKit
 
 enum Tag: String, Encodable {
     case ALL = "ALL"
