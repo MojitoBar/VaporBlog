@@ -5,6 +5,13 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
+    IndexpostInfo(title: "RxSwift를 이용해 TextField 자동완성 구현하기",
+    context: "이번 포스팅에서는 TextField에서 검색어를 입력하면 그에 맞게 테이블 뷰의 아이템을 변경하는 것을 해보려합니다. 이를 RxSwift를 이용해 구현해봤는데요, RxSwift에 대한 내용보다는 기능 구현에 포커스를 맞추려합니다. RxSwift에 대한 내용은 정리하기엔 이해도가 너무 낮기도 하고 너무 좋은 자료들이 있기 때문에 더 나중에 기회가 되면 정리해보도록 하겠습니다.",
+    date: "2022-05-09",
+    file: "RxSearchBar",
+    tags: [.Swift, .iOS],
+    thumb: "/images/rxswift.jpg"),
+    
     IndexpostInfo(title: "iOS 어플 Gifty 배포 회고",
     context: "이번 포스팅에서는 처음으로 배포하게 된 Gifty 어플에 대한 회고를 작성해보려 합니다. 회고를 작성하기 전에 이번에 배포하게 된 Gifty에 대해서 간단히 소개를 하려 합니다! Gifty는 Apple의 Vision 프레임워크를 주력으로 사용하여 갤러리에 있는 기프티콘 이미지만 뽑아 보여주는 어플입니다. 현재는 앱스토어에서 다운 받을 수 있습니다 ㅎㅎ",
     date: "2022-04-24",
