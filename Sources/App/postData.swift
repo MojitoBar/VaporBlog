@@ -5,6 +5,13 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
+    IndexpostInfo(title: "2022 카카오 인턴 코딩테스트 & 2022 프로그래머스 섬머코딩 후기",
+    context: "",
+    date: "2022-05-10",
+    file: "CodingTest",
+    tags: [.Swift, .iOS],
+    thumb: "/images/2022kakaobaner.png"),
+    
     IndexpostInfo(title: "RxSwift를 이용해 TextField 자동완성 구현하기",
     context: "이번 포스팅에서는 TextField에서 검색어를 입력하면 그에 맞게 테이블 뷰의 아이템을 변경하는 것을 해보려합니다. 이를 RxSwift를 이용해 구현해봤는데요, RxSwift에 대한 내용보다는 기능 구현에 포커스를 맞추려합니다. RxSwift에 대한 내용은 정리하기엔 이해도가 너무 낮기도 하고 너무 좋은 자료들이 있기 때문에 더 나중에 기회가 되면 정리해보도록 하겠습니다.",
     date: "2022-05-09",
