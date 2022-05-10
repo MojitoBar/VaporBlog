@@ -6,8 +6,8 @@
 //
 let postDatas: [IndexpostInfo] = [
     IndexpostInfo(title: "2022 카카오 인턴 코딩테스트 & 2022 프로그래머스 섬머코딩 후기",
-    context: "",
-    date: "2022-05-10",
+    context: "알고리즘을 놓지않고 매주 푼 성과를 보기위해 5월 7일 카카오 인턴쉽, 8일 프로그래머스 섬머코딩에 지원했습니다. 이번 포스팅에서는 각 코딩테스트의 후기를 작성해보려합니다. 그리고 다음부턴 절대 이틀 연속으로 코딩테스트를 잡지 말아야겠습니다 일주일에 하루정도는 쉬기위해서...",
+    date: "2022-05-11",
     file: "CodingTest",
     tags: [.Swift, .iOS],
     thumb: "/images/2022kakaobaner.png"),

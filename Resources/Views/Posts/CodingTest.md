@@ -4,7 +4,7 @@ description: 2022 카카오 인턴 코딩테스트 & 2022 프로그래머스 섬
 oneline: 나의 꿀같은 주말이 살살 녹은 이유
 tags: iOS, Swift
 thumbnail: /images/2022kakao.png
-contents: 카카오 인턴 후기/섬머코딩 인턴 후기/정리
+contents: 서론/카카오 인턴 후기/섬머코딩 인턴 후기/정리
 file: CodingTest
 ---
 
@@ -14,7 +14,9 @@ file: CodingTest
 
 이번 포스팅에서는 각 코딩테스트의 후기를 작성해보려합니다.
 
-그리고 다음부턴 절대 이틀 연속으로 코딩테스트를 잡지 말아야겠습니다 일주일에 하루정도는 쉬기위해서...
+그리고 다음부턴 절대 이틀 연속으로 코딩테스트를 잡지 말아야겠습니다.
+
+일주일에 하루정도는 쉬기위해서...
 
 ## 카카오 인턴 후기
 
@@ -98,9 +100,9 @@ SQL는 정말 기초밖에 몰랐기 때문에 일찌감치 포기했고, 알고
 
 문제가 어렵지 않아서 커트라인이 높을거라 생각했는데...
 
-<img alt="2022summerresult" src="/images/2022summerresult.png"/>
+<img style="width: 300px; display: block; margin: auto;" alt="2022summerresult" src="/images/2022summerresult.png"/>
 
-1차 전형에 합격 했습니다!
+1차 전형에 ~~합격~~ 했습니다!
 
 이제 제 이력서가 지원한 회사로 넘어갔고 일주일 내에 따로 연락이 올 거라 하더라고요.
 
@@ -112,15 +114,4 @@ SQL는 정말 기초밖에 몰랐기 때문에 일찌감치 포기했고, 알고
 
 앞으로도 알고리즘을 놓치않고 틈틈이 풀어 감을 잃지 않도록 해야겠습니다.
 
-## 참고자료
-<ul>
-<li>
-    <a href="https://developer.apple.com/videos/play/wwdc2015/408/">Apple Developer</a>
-</li>
-<li>
-    <a href="https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/">Swift에서 프로토콜 중심 프로그래밍(POP)하기</a>
-</li>
-<li>
-    <a href="https://zeddios.tistory.com/255">zeddios's tistory</a>
-</li>
-</ul>
+좋은 결과가 있기를... 🙃
