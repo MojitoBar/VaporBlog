@@ -15,7 +15,7 @@ file: Protocol
 
 따라서 이론적인 부분이나 개념은 깊게 다루지 않을 수도 있습니다. 
 
-[Swift Docs](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)에서는 **procotol**을 아래와 같이 정의합니다.
+[Swift Docs](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)에서는 **protocol**을 아래와 같이 정의합니다.
 
 <img alt="protocol" src="/images/protocol.png"/>
 
