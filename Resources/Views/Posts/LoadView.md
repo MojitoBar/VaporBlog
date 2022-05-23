@@ -3,7 +3,7 @@ date: 2022년 05월 22일 23:37
 description: loadView와 viewDidLoad의 차이
 oneline: loadView를 언제 쓰는게 유용할까?
 tags: iOS, Swift
-thumbnail: /images/vclifecycle.png
+thumbnail: /images/vclifecycle.jpg
 contents: 서론/View Life Cycle/loadView/viewDidLoad/정리
 file: LoadView
 ---
