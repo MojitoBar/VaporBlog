@@ -10,7 +10,7 @@ let postDatas: [IndexpostInfo] = [
     date: "2022-05-28",
     file: "WWDC22",
                   tags: [.Swift, .WWDC],
-    thumb: "/images/ssc.jpg"),
+    thumb: "/images/ssc.png"),
     
     IndexpostInfo(title: "loadView와 viewDidLoad의 차이",
     context: "여느때와 다름없이 깃헙으로 다른 사람들의 소스를 염탐하던 중 loadView()에서 커스텀 뷰를 생성하는 코드를 보게 되었습니다. 평소에 viewDidLoad에서 UI를 그리고 추가하는 코드를 작성하던 저는 loadView와 viewDidLoad의 차이점에 대해 궁금해졌습니다.",
