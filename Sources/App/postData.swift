@@ -6,11 +6,11 @@
 //
 let postDatas: [IndexpostInfo] = [
     IndexpostInfo(title: "WWDC22 Swift Student Challenge 후기",
-    context: "여느때와 다름없이 깃헙으로 다른 사람들의 소스를 염탐하던 중 loadView()에서 커스텀 뷰를 생성하는 코드를 보게 되었습니다. 평소에 viewDidLoad에서 UI를 그리고 추가하는 코드를 작성하던 저는 loadView와 viewDidLoad의 차이점에 대해 궁금해졌습니다.",
+    context: "Apple은 WorldWide Developers Conference(세계 개발자 컨퍼런스), 이하 WWDC를 매년 개최합니다. 컨퍼런스에서는 애플의 새로운 소프트웨어나 서비스 등의 발표가 이뤄지며 그 외에도 전문가의 만남, Apple Design Awards, Swift Student Challenge 등 여러 행사가 진행됩니다. 저는 그 중 Swift Student Challenge에 참가했고 간단한 후기를 남겨보려 합니다.",
     date: "2022-05-28",
     file: "WWDC22",
                   tags: [.Swift, .WWDC],
-    thumb: "/images/vclifecycle.jpg"),
+    thumb: "/images/ssc.jpg"),
     
     IndexpostInfo(title: "loadView와 viewDidLoad의 차이",
     context: "여느때와 다름없이 깃헙으로 다른 사람들의 소스를 염탐하던 중 loadView()에서 커스텀 뷰를 생성하는 코드를 보게 되었습니다. 평소에 viewDidLoad에서 UI를 그리고 추가하는 코드를 작성하던 저는 loadView와 viewDidLoad의 차이점에 대해 궁금해졌습니다.",
