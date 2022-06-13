@@ -5,6 +5,13 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
+    IndexpostInfo(title: "UIViewController 란?",
+    context: "이번 포스팅에서는 기술 면접에서 종종 나오는 UIViewController에 대해 알아보겠습니다. UIViewController 클래스는 모든 뷰 컨트롤러에 공통적인 공유 동작을 정의합니다. UIViewController 클래스의 인스턴스를 직접 만드는 경우는 거의 없습니다. 대신 UIViewController의 하위 클래스를 만들고 뷰 컨트롤러의 뷰 계층 구조를 관리하는 데 필요한 메서드와 속성을 추가합니다.",
+    date: "2022-06-13",
+    file: "UIViewController",
+    tags: [.Swift, .iOS],
+    thumb: "/images/swiftlogo.png"),
+    
     IndexpostInfo(title: "WWDC22 Swift Student Challenge 후기",
     context: "Apple은 WorldWide Developers Conference(세계 개발자 컨퍼런스), 이하 WWDC를 매년 개최합니다. 컨퍼런스에서는 애플의 새로운 소프트웨어나 서비스 등의 발표가 이뤄지며 그 외에도 전문가의 만남, Apple Design Awards, Swift Student Challenge 등 여러 행사가 진행됩니다. 저는 그 중 Swift Student Challenge에 참가했고 간단한 후기를 남겨보려 합니다.",
     date: "2022-05-28",
