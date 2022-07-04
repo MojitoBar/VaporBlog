@@ -5,6 +5,13 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
+    IndexpostInfo(title: "부스트캠프 웹 모바일 7기 코딩테스트 후기",
+    context: "부스트캠프는 네이버커넥트재단에서 운영하는 프로그래밍 부트캠프입니다. 자세한 내용은 홈페이지를 참고해주세요. 간단히 설명하자면 웹 모바일과 AI 분야가 따로 나뉘어져있고, 웹 모바일의 경우 챌린지와 맴버쉽으로 다시 나뉘어집니다. 챌린지를 수료한 후 성적이 좋은 일부가 맴버쉽으로 전환되는거 같더라구요. 저는 이번에 모집한 웹 모바일 7기에 지원했습니다.",
+    date: "2022-07-04",
+    file: "BoostCampTest",
+    tags: [.Swift, .iOS],
+    thumb: "/images/boostcamp.jpg"),
+    
     IndexpostInfo(title: "Escaping(탈출) 클로저란?",
     context: "이번 포스팅에서는 Escaping Closure 즉, 탈출 클로저에 대해 알아보겠습니다. 이 포스팅에서는 클로저에 대한 기본적인 내용은 다루지 않습니다. 탈출 클로저와 비동기 프로그래밍의 관계에 더욱 초점을 두고 정리하였습니다.",
     date: "2022-06-21",
