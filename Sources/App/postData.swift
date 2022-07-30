@@ -5,11 +5,11 @@
 //  Created by judongseok on 2022/03/21.
 //
 let postDatas: [IndexpostInfo] = [
-    IndexpostInfo(title: "Git의 내부 동작 방식",
+    IndexpostInfo(title: "SOLID 완전 정복하기",
     context: "컴퓨터 프로그래밍에서 SOLID란 로버트 마틴이 2000년대 초반에 명명한 객체 지향 프로그래밍 및 설계의 다섯가지 기본 원칙을 마이클 페더스가 두문자어 기억술로 소개한 것입니다. 출처) SOLID 원칙들은 소프트웨어 작업에서 프로그래머가 소스 코드가 읽기 쉽고 확장하기 쉽게 될 때까지 소프트웨어 소스 코드를 리팩토링하여 코드 스멜을 제거하기 위해 적용할 수 있는 지침입니다. 한 마디로 프로그래밍 전략이라 할 수 있죠. SOLID는 SRP, OCP, LSP, ISP, DIP 로 이루어져있는데 지금부터 순서대로 하나씩 알아보겠습니다.",
     date: "2022-07-30",
     file: "SOLID",
-    tags: [.Swift, .Git],
+    tags: [.Swift, .CS],
     thumb: "/images/solid.png"),
     
     IndexpostInfo(title: "Git의 내부 동작 방식",
