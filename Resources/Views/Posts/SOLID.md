@@ -3,7 +3,7 @@ date: 2022년 07월 30일 22:35
 description: SOLID 완전 정복하기
 oneline: 객체지향 언어하면 꼭 나오는 SOLID(가수아님)에 대해
 tags: Swift, CS
-thumbnail: /images/swiftlogo.png
+thumbnail: /images/solid.png
 contents: SOLID 원칙/SRP - 단일 책임 원칙/OCP - 개방&폐쇄 원칙/LSP - 리스코프 치환 원칙/ISP - 인터페이스 분리 원칙/DIP - 의존관계 역전 원칙/느낀점
 file: SOLID
 ---

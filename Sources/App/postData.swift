@@ -10,7 +10,7 @@ let postDatas: [IndexpostInfo] = [
     date: "2022-07-30",
     file: "SOLID",
     tags: [.Swift, .Git],
-    thumb: "/images/git.png"),
+    thumb: "/images/solid.png"),
     
     IndexpostInfo(title: "Git의 내부 동작 방식",
     context: "어쩌다 저쩌다 기회가 되서 버전 관리 시스템인 Git이 내부적으로 어떻게 동작하는지와 그 중 Commit이 어떠한 역할을 하는지 디테일하게 알아보게 되었습니다. 깃의 내부 동작 원리 쉽게 말해 로컬 저장소의 변경사항을 기록하는 명령어 입니다. 저는 처음 깃을 사용할 떄는 add와 commit의 차이점을 명확히 알지는 못했는데요, 로컬의 변경 사항을 stage area에 저장하는 키워드가 add라면, commit은 이를 바탕으로 새로운 버전을 생성하는 키워드입니다.",
