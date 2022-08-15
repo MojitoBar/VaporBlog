@@ -9,7 +9,7 @@ let postDatas: [IndexpostInfo] = [
     context: "앞서 챌린지에 입과하기 위한 코팅테스트의 후기는 여기를 참고해주세요! 7월 18일부터 8월 12일까지 진행한 부스트캠프 챌린지에 대해 간단한 후기와 회고를 남겨보려합니다. 후기 여러 후기에서 다른 일과 병행하기 힘들다는 글을 봤었는데요, 힘든게 아니라 아예 불가능하다고 생각합니다. 여러가지 이유가 있는데요, 일단 매일 주어지는 과제는 말 그대로 챌린지에 초점이 맞춰져있어 주어진 시간에 완벽하게 구현하는게 사실상 불가능합니다. 시간에 맞추기 위해선 항상 어느정도 타협을 해야하고 과제를 수행하기위",
     date: "2022-07-30",
     file: "BoostCampReview",
-    tags: [.Swift, .CS],
+    tags: [.Swift, .iOS],
     thumb: "/images/boostcampintro.png"),
     
     IndexpostInfo(title: "SOLID 완전 정복하기",
