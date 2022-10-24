@@ -271,3 +271,39 @@ a {
     color: #555;
     font-weight: normal;
 }
+
+.hint-info {
+    font-family: "Font Awesome 5 Free";
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    border-left: 4px solid rgb(52, 109, 219);
+    padding: 10px 10px 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    font-size: 1.0rem;
+    background-image: url('/images/info.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    background-size: 20px;
+}
+
+.hint-warn {
+    font-family: "Font Awesome 5 Free";
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    border-left: 4px solid #d33d3d;
+    padding: 10px 10px 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    font-size: 1.0rem;
+    background-image: url('/images/warn.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 8px;
+    background-size: 25px;
+}

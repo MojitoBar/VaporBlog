@@ -15,7 +15,7 @@ body[data-darkmode=on] {
     color: #e8e8e8 !important;
 }
 body {
-    background-color: #f9f9f9;
+    background-color: white;
 }
 /* Darkmode Toggle */
 body[data-darkmode=on] .darkmode > .inner{
